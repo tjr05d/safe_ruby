@@ -24,7 +24,7 @@ class SafeRuby
   def eval
     temp = build_tempfile
     read, write = IO.pipe
-    ChildProcess.build("ruby", temp.path).tap do |process|
+    ChildProcess.build("ruby -e 'require \"rspec\"'", temp.path).tap do |process|
       process.io.stdout = write
       process.io.stderr = write
       process.start
