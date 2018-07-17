@@ -9,5 +9,5 @@ ALLOWED_CONSTANTS= [
   :StopIteration, :RubyVM, :Thread, :TOPLEVEL_BINDING, :ThreadGroup, :Mutex, :ThreadError, :Fiber, :FiberError, :Rational, :Complex,
   :RUBY_VERSION, :RUBY_RELEASE_DATE, :RUBY_PLATFORM, :RUBY_PATCHLEVEL, :RUBY_REVISION, :RUBY_DESCRIPTION, :RUBY_COPYRIGHT, :RUBY_ENGINE,
   :TracePoint, :ARGV, :Gem, :RbConfig, :Config, :CROSS_COMPILING, :Date, :ConditionVariable, :Queue, :SizedQueue, :MonitorMixin, :Monitor,
-  :Exception2MessageMapper, :IRB, :RubyToken, :RubyLex, :Readline, :RUBYGEMS_ACTIVATION_MONITOR
+  :Exception2MessageMapper, :IRB, :RubyToken, :RubyLex, :Readline, :RUBYGEMS_ACTIVATION_MONITOR, :RSpec::Core::FilterRules::File
 ]
