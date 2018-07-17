@@ -1,5 +1,4 @@
 MAKE_SAFE_CODE = <<-STRING
-require 'rspec'
 def keep_singleton_methods(klass, singleton_methods)
   klass = Object.const_get(klass)
   singleton_methods = singleton_methods.map(&:to_sym)

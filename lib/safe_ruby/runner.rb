@@ -64,7 +64,7 @@ class SafeRuby
     file = Tempfile.new('saferuby')
     file.write(MAKE_SAFE_CODE)
     file.write <<-STRING
-      result = eval(%q(#{@code}))
+      result = eval(%q( #{require 'rspec'} #{@code}))
       print Marshal.dump(result)
     STRING
     file.rewind
