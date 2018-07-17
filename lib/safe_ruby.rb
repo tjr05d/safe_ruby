@@ -1,4 +1,5 @@
 require 'childprocess'
+require 'rspec'
 require_relative 'method_whitelist'
 require_relative 'constant_whitelist'
 require_relative 'make_safe_code'
